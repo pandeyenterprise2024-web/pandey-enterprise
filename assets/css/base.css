@@ -1,0 +1,93 @@
+/* Global reset & layout */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.container {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Shared typography blocks */
+.section-title {
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+
+.section-title__eyebrow {
+  color: #0d5bd7;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.section-title__heading {
+  font-size: 48px;
+  color: #111;
+}
+
+.section-title__accent {
+  color: #6f2cff;
+}
+
+/* Buttons */
+.btn {
+  padding: 15px 32px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn--primary {
+  background: linear-gradient(to right, #0d5bd7, #b02ad1);
+  color: #fff;
+}
+
+.btn--outline {
+  background: #fff;
+  border: 2px solid #0d5bd7;
+  color: #0d5bd7;
+}
+
+/* Nav link (topbar & category nav) */
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link--active {
+  color: #ffcc00;
+}
+
+/* Icon color utilities */
+.icon--blue { color: #0d5bd7; }
+.icon--green { color: #4caf50; }
+.icon--purple { color: #7b2cbf; }
+.icon--pink { color: #e91e63; }
+
+/* Background utilities (info boxes, contact icons) */
+.bg--purple { background: #9b59ff; }
+.bg--green { background: #8bc34a; }
+.bg--pink { background: #ff4081; }
+.bg--brand-purple { background: #7c3aed; }
+.bg--brand-blue { background: #0284c7; }
+.bg--brand-green { background: #65a30d; }
+.bg--brand-pink { background: #ec4899; }
